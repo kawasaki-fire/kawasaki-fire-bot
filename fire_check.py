@@ -59,6 +59,3 @@ for item in new_items:
 with open("prev.json", "w", encoding="utf-8") as f:
     json.dump(current, f, ensure_ascii=False, indent=2)
 
-# テスト送信用（必ず届くか確認）
-send_line("✅ テスト通知です。GitHub Actions から送信されました")
-
