@@ -5,7 +5,7 @@ import os
 import time
 
 LINE_TOKEN = os.environ["LINE_TOKEN"]
-URL = "https://sc.city.kawasaki.jp/saigai/index.htm"
+#URL = "https://sc.city.kawasaki.jp/saigai/index.htm"
 
 
 def send_line(msg):
@@ -66,12 +66,12 @@ def check_fire():
 # -----------------------------
 # 1分ループ
 # -----------------------------
-if __name__ == "__main__":
-    while True:
-        try:
-            check_fire()
-        except Exception as e:
-            print("エラー発生:", e)
-
-        print("=== 60秒待機 ===")
-        time.sleep(60)
+#if __name__ == "__main__":
+#    while True:
+#        try:
+#            check_fire()
+#        except Exception as e:
+#            print("エラー発生:", e)
+#
+#        print("=== 60秒待機 ===")
+#        time.sleep(60)
